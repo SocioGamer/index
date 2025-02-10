@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mia Luna🌙</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            animation: backgroundAnimation 6s infinite alternate;
+        }
+        
+        @keyframes backgroundAnimation {
+            0% {
+                background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            }
+            100% {
+                background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            }
+        }
+        
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .framed-image {
+            width: 100%;
+            max-width: 500px;
+            border: 10px solid #fff;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(255, 105, 180, 0.8);
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.6);
+        }
+        
+        #soundcloud-player {
+            display: none;
+        }
+    </style>
+    <script>
+        function playMusic() {
+            let iframe = document.getElementById("soundcloud-player");
+            iframe.src = iframe.src + "&auto_play=true";
+            document.body.removeEventListener("click", playMusic);
+        }
+    </script>
+</head>
+<body onclick="playMusic()">
+    <div class="container">
+        <img class="framed-image" src="https://media.tenor.com/dQgEllasnCAAAAAM/kitties-anime-cuddle.gif" alt="Kitties Anime Cuddle GIF">
+        
+        <h2>😍😍LO SABIA!!!😍😍</h2> 
+        <h1>💗Mine Kawawa 😻💗</h1>
+        <h2>💕💕THI AMO MUCHO MI OSHITA 😍♾️🦋🐺✨</h2> 
+        
+        <!-- Nueva imagen con marco decorativo -->
+        <img class="framed-image" src="https://img.wattpad.com/cover/294463377-256-k513094.jpg" alt="Imagen adicional">
+        
+        <!-- Incrustar el reproductor de SoundCloud (oculto) -->
+        <iframe id="soundcloud-player" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/mehromusic/princess-of-melancholia&color=%23ff5500&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+        </iframe>
+    </div>
+</body>
+</html>
